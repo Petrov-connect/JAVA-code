@@ -1,1 +1,1 @@
-# JAVA-code
+# Java source code to solve some problems

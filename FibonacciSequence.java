@@ -1,14 +1,13 @@
-//created by J.M.
-
 import java.util.Scanner;
-
-public class FibonacciSecuence {
+//created by J.M.
+public class FibonacciSequence {
     public static void main(String[] args) {
+
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter positive number");
         int n = Integer.parseInt(scan.nextLine());
         while(n<0){
-        System.out.println("Enter positive number");
+            System.out.println("Enter positive number");
         }
         int[] arr = new int[n];
         if (n == 0) {

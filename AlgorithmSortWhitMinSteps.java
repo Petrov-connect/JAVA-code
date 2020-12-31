@@ -2,7 +2,7 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class AlgorithmSort {
+public class AlgorithmSortWhitMinSteps {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         List<Integer> array = Arrays.stream(scan.nextLine().split("\\s+"))

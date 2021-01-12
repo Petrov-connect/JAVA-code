@@ -1,8 +1,13 @@
+import java.text.DecimalFormat;
+import java.util.Arrays;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 public class PrintOnTheConsole {
     public static void main(String[] args) {
-      /*
-                                       ОТПЕЧАТВАНЕ НА ЕДИН РЕД:
-         Отпечатва стринг без краен и начален спайс и заменя всички редици спейсове с по единичен:
+
+                                       //ОТПЕЧАТВАНЕ НА ЕДИН РЕД:
+         //Отпечатва стринг без краен и начален спайс и заменя всички редици спейсове с по единичен:
          System.out.println(output.toString().trim().replaceAll("\\s+"," "));
 
          System.out.print(Arrays.toString(array).replaceAll("[\\[\\]]", "").replaceAll(", ", " "));
@@ -13,29 +18,30 @@ public class PrintOnTheConsole {
 
          Integer - System.out.println( array.stream().map(String::valueOf).collect(Collectors.joining(" ")));
 
-         Отпечатва цял стринг масив разделен със space:
+         //Отпечатва цял стринг масив разделен със space:
          System.out.println(String.join(" ",name of string array));
 
-         МАП В МАП ---mapInfo.forEach((key, value) -> value.forEach((key1, value1) ->
+         //МАП В МАП ---
+         mapInfo.forEach((key, value) -> value.forEach((key1, value1) ->
                         System.out.printf("%s - %d , %.2f", key, key1, value1)));
 
-         Форматира изхода и го печати:
+         //Форматира изхода и го печати:
          StringBuilder output= new StringBuilder();
          numbers.forEach(number -> output.append((new DecimalFormat("0.#")).format(number)).append(" "));
          System.out.println(output);
 
-                                      ОТПЕЧАТВАНЕ НА НОВ РЕД:
+                                      //ОТПЕЧАТВАНЕ НА НОВ РЕД:
          nameList.forEach(System.out::println);
          Arrays.stream(array).forEach(System.out::println);
          IntStream.range(0, number).mapToObj(i -> new Message()).map(Message::output).forEach(System.out::println);
          Arrays.stream(array).mapToObj(value -> value + " ").forEach(System.out::print);
 
-                                      ОТПЕЧАТВАНЕ В МАП С ПОРЕДЕН НОМЕР:
-         public static int index=0; - в публик класа:
-         в мейн класа:
+                                      //ОТПЕЧАТВАНЕ В МАП С ПОРЕДЕН НОМЕР:
+         public static int index=0; //- в публик класа:
+         //в мейн класа:
          String [] num=new String[]{"1st","2nd","3rd"};
                 mapInfo.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).limit(3)
                         .forEach(entry-> {System.out.printf("%s place: %s%n",num[index],entry.getKey()); index++; });
-    */
+
     }
 }

@@ -24,6 +24,6 @@ public class FibonacciSequence {
                 arr[i] = arr[i - 1] + arr[i - 2];
             }
         }
-        System.out.println(arr[n - 1]);
+        System.out.print(Arrays.toString(arr).replaceAll("[\\[\\]]", "").replaceAll(", ", " "));
     }
 }

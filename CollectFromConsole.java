@@ -12,7 +12,7 @@ public class CollectFromConsole {
         // int [] :
         int[] intArray = Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
         // String []:
-        String [] stringArray= (String[]) Arrays.stream(scan.nextLine().split("\\s+")).toArray();
+        String [] stringArray= scan.nextLine().split("\\s+");
 
         // List Integer:
         List<Integer> listInteger= Arrays.stream(scan.nextLine().split("\\s+"))

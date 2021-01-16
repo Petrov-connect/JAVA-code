@@ -1,9 +1,10 @@
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-
 //created by J.M.
+
 public class CollectFromConsole {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

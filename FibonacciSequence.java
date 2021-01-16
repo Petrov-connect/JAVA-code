@@ -18,7 +18,7 @@ public class FibonacciSequence {
             return;
         }
         arr[0] = 1;
-        if (n != 1) {
+        if (n > 1) {
             arr[1] = 1;
         }
         if (n > 2) {

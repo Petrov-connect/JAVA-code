@@ -1,16 +1,18 @@
-import java.util.Scanner;
+import java.util.*;
 //created by J.M.
+
 public class FibonacciSequence {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the length of the sequence");
+        System.out.println("Enter the length of the sequence:");
         int n = Integer.parseInt(scan.nextLine());
         while(n<0){
-            System.out.println("Enter positive number");
+            System.out.println("Enter positive number:");
             n = Integer.parseInt(scan.nextLine());
         }
-        int[] arr = new int[n];
+        long[] arr = new long[n];
         if (n == 0) {
             System.out.println(0);
             return;

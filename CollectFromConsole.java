@@ -20,13 +20,13 @@ public class CollectFromConsole {
         char[] arrayName = scan.nextLine().replaceAll("\\s+","").toCharArray();
         
         // double[]:
-        double[] arrayName = Arrays.stream(scan.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
+        double[] doubleArray = Arrays.stream(scan.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
 
         // List Integer:
         List<Integer> listInteger= Arrays.stream(scan.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());
         
         // List Double:
-        List<Double>arrayName=Arrays.stream(scan.nextLine().split("\\s+")).map(Double::parseDouble).collect(Collectors.toList());
+        List<Double>arrayDouble=Arrays.stream(scan.nextLine().split("\\s+")).map(Double::parseDouble).collect(Collectors.toList());
                
         // List String:
         List<String> listString= Arrays.stream((scan.nextLine().split("\\s+")))

@@ -14,6 +14,8 @@ public class CollectFromConsole {
         int[] intArray = Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
         // String []:
         String [] stringArray= scan.nextLine().split("\\s+");
+        // char[]:
+        char[] arrayName = scan.nextLine().replaceAll("\\s+","").toCharArray();
 
         // List Integer:
         List<Integer> listInteger= Arrays.stream(scan.nextLine().split("\\s+"))
@@ -23,7 +25,7 @@ public class CollectFromConsole {
         .collect(Collectors.toList());
 
         //List Characters:
-        String text=scan.nextLine();
+        String text=scan.nextLine().replaceAll("\\s+","");
         List<Character> charList= IntStream.range(0, text.length()).mapToObj(text::charAt).collect(Collectors.toList());
 
         //Queue: String:

@@ -36,6 +36,12 @@ public class PrintOnTheConsole {
          String [] num=new String[]{"1st","2nd","3rd"};
                 mapInfo.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).limit(3)
                         .forEach(entry-> {System.out.printf("%s place: %s%n",num[index],entry.getKey()); index++; });
+
+                                      Отпечатване на матрица:
+            Arrays.stream(matrix).forEach(row -> {
+            Arrays.stream(row).forEach(element -> System.out.println(element));
+            System.out.println();
+        });
     */
     }
 }

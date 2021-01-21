@@ -32,23 +32,34 @@ public class CollectFromConsole {
         List<String> listString= Arrays.stream((scan.nextLine().split("\\s+")))
         .collect(Collectors.toList());
 
-        //List Characters:
+        // List Characters:
         String text=scan.nextLine().replaceAll("\\s+","");
         List<Character> charList= IntStream.range(0, text.length()).mapToObj(text::charAt).collect(Collectors.toList());
 
-        //Queue: String:
+        // Queue: String:
         ArrayDeque<String> queueName = Arrays.stream(scan.nextLine().split("\\s+")).collect(Collectors.toCollection(ArrayDeque::new));
         
-        //Integer queue:
+        // Integer queue:
         ArrayDeque<Integer> deque = Arrays.stream(scan.nextLine().split("\\s+")).map(Integer::parseInt).collect(Collectors.toCollection(ArrayDeque::new));
 
-        //Integer stack:
+        // Integer stack:
         ArrayDeque<Integer> numbersStack = new ArrayDeque<>();
         Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).forEach(numbersStack::push);
 
-        //for map : key - name from console -> value =0;
-        Map<String,Integer> mapInfo = Arrays.stream(scan.nextLine().split("\\s+")).collect(Collectors.toMap(s -> s, s -> 0, (a, b) -> a, LinkedHashMap::new));  
-        
-        
+        // for map : key - name from console -> value =0;
+        Map<String,Integer> mapInfo = Arrays.stream(scan.nextLine().split("\\s+")).collect(Collectors.toMap(s -> s, s -> 0, (a, b) -> a, LinkedHashMap::new));
+
+    }
+    // for matrix:
+    private static int[][] readMatrix(Scanner scanner) {
+        int[] size = readArray(scanner);
+        int[][] matrix = new int[size[0]][size[1]];
+        for (int i = 0; i < size[0]; i++) {
+            matrix[i] = readArray(scanner);
+        }
+        return matrix;
+    }
+    private static int[] readArray(Scanner scanner) {
+        return Arrays.stream(scanner.nextLine().split(", ")).mapToInt(Integer::parseInt).toArray();
     }
 }

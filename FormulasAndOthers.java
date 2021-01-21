@@ -16,8 +16,12 @@ public class FormulasAndOthers {
                         numbers.subList(startIndex, endIndex + 1).clear();
                    }
 
-         - броя на уникалните символи в текст
+         - броя на уникалните символи в текст :
          text.chars().distinct().count()
+
+         - сумира интиджерите в матрица :
+         Arrays.stream(matrix).flatMapToInt(IntStream::of).sum();
+         Arrays.stream(matrix).mapToInt(arr->Arrays.stream(arr).sum()).sum());
         -------------------------------------------------------------------------------------------------------*/
     }
 }

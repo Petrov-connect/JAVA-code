@@ -35,7 +35,6 @@ public class CompareMatrices {
         }
         return true;
     }
-
     private static int[][] readMatrix(Scanner scan) {
         int[] size = readArray(scan);
         int rows = size[0],cols = size[1];

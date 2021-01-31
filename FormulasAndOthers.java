@@ -1,6 +1,17 @@
 public class FormulasAndOthers {
-    public static void main(String[] args) {
+    //created by J.M.
      /*
+        ------------------------------------------------------------------------------------------------------
+        private static Double getAverage(List<Double> value) {
+        double average = 0.0;
+        for (Double aDouble : value) {
+            average += aDouble;
+        }
+        return average / value.size();
+    }
+        ------------------------------------------------------------------------------------------------------
+        sum matrix elements -
+        Arrays.stream(matrix).mapToInt(arr->Arrays.stream(arr).sum()).sum());
         ------------------------------------------------------------------------------------------------------
                                           ФОРМУЛИ:
          ЗА РАЗТОЯНИЕ МЕЖДУ ДВЕ ТОЧКИ В КООРДИНАТНА СИСТЕМА
@@ -8,7 +19,7 @@ public class FormulasAndOthers {
 
          ЗА РАЗТОЯНИЕ ОТ ЦЕНТЪРА ДО ТОЧКА - Math.sqrt(Math.pow(x1,2) + Math.pow(y1,2)
         -------------------------------------------------------------------------------------------------------
-         -boolean- добавя в мап кей със стойност ако не съществува ,а ако съществува увеличава стойноста:
+         -boolean- с тернарен оператор ,добавя в мап кей със стойност ако не съществува ,а ако съществува увеличава стойноста:
          userInfo.put(user,!userInfo.containsKey(user)?points:userInfo.get(user)+points);
 
          изтрива от листа брой позиции ако са валидни индексите:
@@ -22,6 +33,29 @@ public class FormulasAndOthers {
          - сумира интиджерите в матрица :
          Arrays.stream(matrix).flatMapToInt(IntStream::of).sum();
          Arrays.stream(matrix).mapToInt(arr->Arrays.stream(arr).sum()).sum());
-        -------------------------------------------------------------------------------------------------------*/
-    }
+
+        --------------------------------------------------------------------------------------------------------
+        Вади версиата на JAVA:
+        System.out.println(System.getProperty("java.version"));
+        --------------------------------------------------------------------------------------------------------
+
+        @Override
+        public int hashCode(){
+        return (произволно число ) * Objects.hash(параметрите в конструктура на класа);
+        }
+
+        @Override
+        public boolean equals(Object o){
+            if( this == o ){
+            return true;
+            }
+            if( this.getClass() != o.getClass() ){
+            return false;
+            }
+            класа other = (класа) о; - обекта кастнат към същия клас:
+            return this.field.equals(other.field) && за всяко поле от класа:
+        }
+
+        --------------------------------------------------------------------------------------------------------
+      */
 }

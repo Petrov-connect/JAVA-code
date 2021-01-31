@@ -39,6 +39,7 @@ public class SortExamples {
                             return sort;
                         })...
 
+
           stringIntegerMap.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed().thenComparing(Map.Entry.comparingByKey()))
                 .forEach(e -> System.out.printf("%s: %d%n", e.getKey(), e.getValue()));

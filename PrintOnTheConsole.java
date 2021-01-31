@@ -1,5 +1,5 @@
 public class PrintOnTheConsole {
-    public static void main(String[] args) {
+    //created by J.M.
       /*
                                        ОТПЕЧАТВАНЕ НА ЕДИН РЕД:
          Отпечатва стринг без краен и начален спайс и заменя всички редици спейсове с по единичен:
@@ -25,6 +25,7 @@ public class PrintOnTheConsole {
          System.out.println(output);
 
                                       ОТПЕЧАТВАНЕ НА НОВ РЕД:
+         set.stream().collect(Collectors.joining(System.lineSeparator())));
          nameList.forEach(System.out::println);
          Arrays.stream(array).forEach(System.out::println);
          IntStream.range(0, number).mapToObj(i -> new Message()).map(Message::output).forEach(System.out::println);
@@ -37,11 +38,11 @@ public class PrintOnTheConsole {
                 mapInfo.entrySet().stream().sorted(Map.Entry.<String, Integer>comparingByValue().reversed()).limit(3)
                         .forEach(entry-> {System.out.printf("%s place: %s%n",num[index],entry.getKey()); index++; });
 
-                                      Отпечатване на матрица:
-            Arrays.stream(matrix).forEach(row -> {
-            Arrays.stream(row).forEach(element -> System.out.println(element));
-            System.out.println();
+            mapInfo.forEach((key, value) -> {
+            System.out.printf("%s->%n", key);
+            value.forEach((key1, value1) ->
+                    System.out.printf(" %s %s %n", key1, value1));
         });
+
     */
-    }
 }

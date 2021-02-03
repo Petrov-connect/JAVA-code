@@ -2,6 +2,21 @@ public class ReadAndPrintMatrix {
     //created by J.M.
 
 /*
+
+     private static int[] findIndexes(char[][] matrix, char toFind) {
+        int[] indexes = new int[2];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                if (matrix[i][j] == toFind) {
+                    indexes[0] = i;
+                    indexes[1] = j;
+                }
+            }
+        }
+        return indexes;
+    }
+
+
      READ MATRIX:
     -------------------------------------------------------------------------------------------------------
     int [][]
@@ -49,7 +64,7 @@ public class ReadAndPrintMatrix {
     //-----------------------------------------------------------------------------------------------------------
 
     Arrays.stream(matrix).forEach(row ->{ Arrays.stream(row)
-            .forEach(System.out::print); System.out.println();; });
+            .forEach(System.out::print); System.out.println(); });
 
     private static void printMatrix(int[][] matrix) {
         for (int[] row : matrix) {

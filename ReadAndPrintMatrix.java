@@ -40,7 +40,7 @@ public class ReadAndPrintMatrix {
          int rows = ? ;
          int cols = ? ;
         char[][] matrix = new char[rows][cols];
-        for (int row = 0; row < 8; row++) {
+        for (int row = 0; row < rows; row++) {
             matrix[row] = scan.nextLine()
                     .replaceAll("\\s+", "").toCharArray();
         }

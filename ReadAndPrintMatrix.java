@@ -16,6 +16,17 @@ public class ReadAndPrintMatrix {
         return indexes;
     }
 
+     private static void checkForBonus(int i, String dir) {
+        while (indexesInBounds() && matrix[beeRow][beeCol] == 'O') {
+            matrix[beeRow][beeCol] = '.';
+            if (dir.equals("col")) {
+                beeCol = Math.abs(beeCol) + i;
+            } else {
+                beeRow = Math.abs(beeRow) + i;
+            }
+        }
+    }
+
 
      READ MATRIX:
     -------------------------------------------------------------------------------------------------------
@@ -46,6 +57,21 @@ public class ReadAndPrintMatrix {
         }
         return matrix;
     }
+
+    private static void readMatrix(Scanner scan) {
+        int n = Integer.parseInt(scan.nextLine());
+        matrix = new char[n][n];
+        for (int row = 0; row < matrix.length; row++) {
+            String input = scan.nextLine();
+            matrix[row] = input.toCharArray();
+            if (input.contains("B")) {
+                beeRow = row;
+                beeCol = input.indexOf('B');
+            }
+        }
+    }
+
+
 
     String [][]
 
@@ -86,6 +112,8 @@ public class ReadAndPrintMatrix {
         Arrays.stream(matrix).map(row -> Arrays.toString(row).replaceAll("[\\[\\]]", "")
                 .replaceAll(", ", "")).forEach(System.out::println);
     }
+    Arrays.stream(matrix).forEach(e->System.out.println(Arrays.toString(e)
+                .replaceAll("[\\[\\]]", "").replaceAll(", ", " ")));
 */
 
 }

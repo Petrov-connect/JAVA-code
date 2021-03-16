@@ -1,5 +1,5 @@
 public class SortExamples {
-    public static void main(String[] args) {
+
 /*
         ---------------------------------------------------------------------------------------------------------
                        Лист:
@@ -59,5 +59,5 @@ public class SortExamples {
                 .forEach(s -> { System.out.printf("Side: %s, Members: %d%n", s.getKey(), s.getValue().size());
                 s.getValue().stream().sorted(String::compareTo).forEach(person -> System.out.printf("! %s%n", person));});
         --------------------------------------------------------------------------------------------------*/
-    }
+
 }

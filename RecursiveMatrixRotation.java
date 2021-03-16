@@ -2,8 +2,8 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
-
 //created by J.M.
+
 public class RecursiveMatrixRotation {
 
     public static void main(String[] args) {
@@ -47,7 +47,7 @@ public class RecursiveMatrixRotation {
     }
 
     private static void printMatrix(char[][] matrix) {
-        Arrays.stream(matrix).map(row -> Arrays.toString(row).replaceAll("[\\[\\]]", "")
-                .replaceAll(", ", "")).forEach(System.out::println);
+        Arrays.stream(matrix).map(row -> Arrays.toString(row)
+                .replaceAll("[\\[\\], ]", "")).forEach(System.out::println);
     }
 }

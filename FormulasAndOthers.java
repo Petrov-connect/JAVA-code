@@ -8,7 +8,10 @@ public class FormulasAndOthers {
             average += aDouble;
         }
         return average / value.size();
-    }
+        }
+        -----------------------------------------------------------------------------------------------------
+        matches("^[^0-9]+$") - if not have digit = true - if have digit = false
+        matches("^[0-9]+$") - if have only digits = true
         ------------------------------------------------------------------------------------------------------
         sum matrix elements -
         Arrays.stream(matrix).mapToInt(arr->Arrays.stream(arr).sum()).sum());

@@ -1,6 +1,9 @@
 public class FormulasAndOthers {
     //created by J.M.
      /*
+
+        ------------------------------------------------------------------------------------------------------
+        Locale.setDefault(Locale.US); точка вместо запетая в конзолата
         ------------------------------------------------------------------------------------------------------
         private static Double getAverage(List<Double> value) {
         double average = 0.0;

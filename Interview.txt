@@ -215,6 +215,28 @@ A class should always start with an uppercase first letter,
 and that the name of the java file should match the class name.
 
 SOLID:
+Single Responsibility principle.
+The single-responsibility principle (SRP) is a computer-programming principle that states that every module,
+class or function in a computer program should have responsibility over a single part of that program's
+functionality, and it should encapsulate that part.
+
+Open/Closed principle.
+In object-oriented programming, the open–closed principle states "software entities
+(classes, modules, functions, etc.) should be open for extension, but closed for modification";
+that is, such an entity can allow its behaviour to be extended without modifying its source code.
+
+Liskov Substitution principle.
+The principle defines that objects of a superclass shall be replaceable with objects of its subclasses
+without breaking the application.
+That requires the objects of your subclasses to behave in the same way as the objects of your superclass.
+
+Interface Segregation principle.
+In the field of software engineering, the interface-segregation principle (ISP)
+states that no client should be forced to depend on methods it does not use.
+
+Dependency Inversion principle.
+The principle states: High-level modules should not depend on low-level modules.
+Both should depend on abstractions (e.g., interfaces). Abstractions should not depend on details.
 
 TEST DRIVEN DEVELOPMENT: Test First approach
 Test-driven development (TDD)
@@ -234,8 +256,6 @@ Structural-Describe ways to assemble objects to implement a new functionality
 Behavioral-Deal with dynamic interactions among societies of classes
 -Command Pattern: An object encapsulates all the information needed to call a method at a later time
 -Template Pattern: Define the skeleton of an algorithm in a method,leaving some implementation to its subclasses
-
-
 
 OVERRIDE:
 Ability to define a behavior that's specific to the subclass type,
